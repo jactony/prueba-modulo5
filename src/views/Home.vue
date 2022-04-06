@@ -19,10 +19,12 @@
           <v-card-text class="text-left">
             <h3>{{ curso.nombre }}</h3>
             <ul>
-              <li>Código: {{ curso.codigo }}</li>
-              <li>Duración: {{ curso.duracion }}</li>
               <li>Valor: $ {{ curso.costo }}</li>
               <li>Vacantes: {{ curso.cupos }}</li>
+              <li>Fecha inicio: {{ curso.fecha }}</li>
+              <li>Descripción: {{ curso.descripcion }}</li>
+              
+              
             </ul>
           </v-card-text>
         </v-card>

@@ -7,10 +7,10 @@
       :items="cursos"
       class="elevation-1">
       
-      <template
-      v-slot:item.data.precio="{ item }">
-        ${{ formatNumber(item.data.precio) }}
-      </template>
+      <!-- <template
+      v-slot:item.data.costo="{ item }">
+        ${{ formatNumber(item.data.costo) }}
+      </template> -->
       
 <!-- boton del lapiz -->
       <template
@@ -135,40 +135,37 @@ export default {
     dialogDelete: false,
     headers: [
       /* aqui va la tabla con el resto de los campos */
-      {
-        text: "Codigo",
-        value: "data.codigo",
-      },
+      
       {
         text: "Nombre Curso",
         value: "data.nombre",
       },
       {
-        text: "estado",
-        value: "data.estado",
+        text: "Cupos",
+        value: "data.cupos",
+      },
+      {
+        text: "Inscritos",
+        value: "data.inscritos",
+      },
+      {
+        text: "Duración",
+        value: "data.duracion",
       },
       {
         text: "Costo",
         value: "data.costo",
       },
       {
-        text: "Duración",
-        value: "data.duracion",
-      },
-
-      {
-        text: "Descripción",
-        value: "data.descripcion",
+        text: "estado",
+        value: "data.estado",
       },
       {
-        text: "Cupos",
-        value: "data.cupos",
+        text: "Fecha Inicio",
+        value: "data.fecha",
       },
+       
       
-      {
-        text: "Inscritos",
-        value: "data.inscritos",
-      },
       {
         text: "Imagen",
         value: "data.url_imagen",
