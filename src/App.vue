@@ -2,11 +2,13 @@
   <v-app>
     <v-app-bar app color="blue darken-2" dark>
       <div class="d-flex align-center">
-        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-        <h4>Cursos AlfaWeb</h4>
-      </div>
+        
+        <v-app-bar-nav-icon @click="drawer = !drawer">
+          
+        </v-app-bar-nav-icon>
 
-      <v-spacer></v-spacer>
+        <h4 class="mr-5 text-h5 mb-1">Cursos AlfaWeb </h4>
+      </div>
 
       <div v-if="user">
         <span class="mr-2">{{ user.email }}</span>
@@ -67,3 +69,12 @@ export default {
   },
 };
 </script>
+
+<style scope>
+ 
+  .btn:link {
+    text-decoration: none;
+  }
+ 
+  
+</style>

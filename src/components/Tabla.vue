@@ -7,10 +7,23 @@
       :items="cursos"
       class="elevation-1">
       
-      <!-- <template
+      <template
+
       v-slot:item.data.costo="{ item }">
+      <div class="redondear">
         ${{ formatNumber(item.data.costo) }}
-      </template> -->
+      </div>  
+      
+      </template>
+
+      <template
+
+      v-slot:item.data.fecha="{ item }">
+      <div class="redondear">
+        {{ item.data.fecha }}
+      </div>  
+      
+      </template>
       
 <!-- boton del lapiz -->
       <template
@@ -165,7 +178,6 @@ export default {
         value: "data.fecha",
       },
        
-      
       {
         text: "Imagen",
         value: "data.url_imagen",
@@ -225,5 +237,9 @@ export default {
 </script>
 
 <style scoped>
-
+.redondear{
+  background-color:rgb(133, 174, 85);
+  border-radius: 10px;
+  padding: 6px;
+}
 </style>
