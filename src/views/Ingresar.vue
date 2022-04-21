@@ -5,9 +5,9 @@
       <v-form ref="formulario">
         <h2 class="mb-7">Iniciar sesión</h2>
         <v-text-field v-model="usuario.email" label="email"></v-text-field>
-        <v-text-field
+        <v-text-field type="password"
           v-model="usuario.password"
-          label="password"
+          label="Ingresar contraseña"
         ></v-text-field>
         <v-btn @click="iniciarSesion" color="blue darken-2" class="white--text">Iniciar Sesión</v-btn>
       </v-form>
