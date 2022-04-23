@@ -25,13 +25,13 @@
       
       </template>
       
-<!-- boton del lapiz -->
+<!-- botón del lápiz -->
       <template
       v-slot:item.actions="{ item }">
         <v-icon small class="mr-2" @click="editItem(item.id)">
           mdi-pencil
         </v-icon>
-<!-- boton del basurero para eliminar -->
+<!-- botón del basurero para eliminar -->
         <v-icon small @click="deleteItem(item.id)"> mdi-delete </v-icon>
       </template>
 <!-- Aquí va la imagen chica de la tabla -->
@@ -183,8 +183,11 @@ export default {
         value: "data.url_imagen",
       },
 
-      { text: "Actions", value: "actions", sortable: false },
+      { text: "Modificar", 
+        value: "actions", 
+        sortable: false },
     ],
+
     editedIndex: null,
     editedItem: {},
     modeloRules: [(val) => val !== "" || "Debe ingresar datos"],
@@ -212,7 +215,7 @@ export default {
     },
     async deleteItem(id) {
       const confirmacion = confirm(
-        "¿Quiere borrar el registro?"
+        "¿Seguro que quiere borrar el registro?"
       );
       if (confirmacion) {
         await this.delete_Curso(id);

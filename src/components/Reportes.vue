@@ -68,7 +68,9 @@ export default {
   computed: {
 
     ...mapState(["cursos"]),
-    ...mapGetters(["cantidadDeCursos", "cantidadDeAlumnosInscritos", "cantidadTotalCupos",
+    ...mapGetters(["cantidadDeCursos", 
+    "cantidadDeAlumnosInscritos", 
+    "cantidadTotalCupos",
     "cantidadCuposRestantes",
     "cantidadCursosTerminados",
     "cantidadCursosActivos"]),

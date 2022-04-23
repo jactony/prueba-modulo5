@@ -4,14 +4,13 @@
       <div class="d-flex align-center">
         
         <v-app-bar-nav-icon @click="drawer = !drawer">
-          
         </v-app-bar-nav-icon>
 
-        <h4 class="mr-5 text-h5 mb-1">Cursos AlfaWeb </h4>
+        <h4 class="d-flex mr-5 text-h5 mb-1">Cursos AlfaWeb </h4>
       </div>
 
-      <div v-if="user">
-        <span class="mr-2">{{ user.email }}</span>
+      <div class="d-flex align-center ml-auto" v-if="user">
+        <span>{{ user.email }}</span>
         <v-btn text @click="cerrarSesion">
           <v-icon>mdi-logout</v-icon>
         </v-btn>
